@@ -12,6 +12,27 @@ body {
     background-attachment: fixed;
 }
 
+/* Accessibility: skip link */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    background: #00458E;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    z-index: 999;
+}
+
 /* NAVBAR */
 .navbar {
     background: linear-gradient(to right, #00458E, #00AEEF);
